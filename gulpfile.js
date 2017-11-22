@@ -114,7 +114,7 @@ gulp.task('develop', ['build'], function(){
 gulp.task('deploy', ['build'], function(){
     return surge({
         project: 'dist',
-        domain: 'https://my-first-website.surge.sh'
+        domain: 'https://ghc.surge.sh'
     })
 });
 
