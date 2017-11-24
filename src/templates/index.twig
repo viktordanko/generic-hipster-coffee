@@ -4,37 +4,38 @@
 {% block title %}Generic hipster coffee{% endblock %}
 
 
+{% block heading %}Generic hipster coffee{% endblock %}
+
 {% block content %}
-    <main>
-        <div class="container px-4">
-            <h1>Generic hipster coffee</h1>
-            <h2>Specialty coffee, fresh food & local community.</h2>
-            <div class="ghc-img-responsive">
-                <img class="img-fluid " src="/img/counter.jpg" alt="">
-            </div>
-            <div class="ghc-contact-info mb-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 px-0">
-                            <h4>Opening hours</h4>
-                            <p>Sunday &ndash; Thursday: 8:00 – 23:00</p>
-                            <p>Friday &ndash; Saturday: 8:00 – 1:00</p>
-                        </div>
-                        <div class="col-sm-12 col-md-4 px-0">
-                            <h4>Book a table</h4>
-                            <p>Call +1&nbsp;415-321-4567</p>
-                        </div>
-                        <div class="col-sm-12 col-md-4 px-0">
-                            <h4>Address</h4>
-                            <p>321 Ivy St.</p>
-                            <p>San Francisco, CA 94102</p>
-                        </div>
-                    </div>
+    <h2>Specialty coffee, fresh food & local community.</h2>
+    <div class="ghc-img-responsive">
+        <img class="img-fluid " src="/img/counter.jpg" alt="">
+    </div>
+    <div class="ghc-contact-info mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 px-0">
+                    <h4>Opening hours</h4>
+                    <p>Sunday &ndash; Thursday: 8:00 – 23:00</p>
+                    <p>Friday &ndash; Saturday: 8:00 – 1:00</p>
+                </div>
+                <div class="col-sm-12 col-md-4 px-0">
+                    <h4>Book a table</h4>
+                    <p>Call +1&nbsp;415-321-4567</p>
+                </div>
+                <div class="col-sm-12 col-md-4 px-0">
+                    <h4>Address</h4>
+                    <p>321 Ivy St.</p>
+                    <p>San Francisco, CA 94102</p>
                 </div>
             </div>
-            <div class="ghc-map-responsive container-fluid p-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10244.348749403387!2d14.4308981!3d50.0659288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74563abbc904c4ad!2sFolimanka+Technologies!5e0!3m2!1ssk!2scz!4v1511381664444" class="img-fluid" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
         </div>
-    </main>
+    </div>
+
+{% endblock %}
+
+ {% block footerMedia %}
+    <div class="ghc-map-responsive container-fluid p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10244.348749403387!2d14.4308981!3d50.0659288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74563abbc904c4ad!2sFolimanka+Technologies!5e0!3m2!1ssk!2scz!4v1511381664444" class="img-fluid" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 {% endblock %}

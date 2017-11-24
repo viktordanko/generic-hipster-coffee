@@ -30,7 +30,17 @@
             </div>
         </nav>
     </header>
-    {% block content %}{% endblock %}
+    <main>
+        <div class="container">
+            <h1>{% block heading %}{% endblock %}</h1>
+            {% block content %}{% endblock %}
+            {% block footerMedia %}
+            <div class="ghc-img-responsive">
+                <img class="img-fluid" src="/img/{% block footerImg %}{% endblock %}" alt="">
+            </div>
+            {% endblock %}
+        </div>
+    </main>
     <footer class="bg-dark">
         <div class="container px-4">
             <ul class="navbar-nav flex-row justify-content-center">
