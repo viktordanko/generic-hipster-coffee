@@ -1,457 +1,302 @@
-{% extends '_base.twig' %}
-
-
-{% block title %}Generic hipster coffee{% endblock %}
-
-
-{% block content %}
-    <main class="container">
-        <h1>Menu</h1>
-        <div class="row"><!--START ROW 1-->
-            <div class="col-sm-12 col-md-6">
-                <h4>Espresso coffee</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Espresso</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.8</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Double espresso</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Americano</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Espresso machiato</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.3</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Cappuccino</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.2</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Flat White</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Latte</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Extra shot</p>
-                    </div>
-                    <div class="col-2">
-                        <p>1.1</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Filter coffee</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>House Drip Coffee</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Aeropress</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>V60</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Kalita</p>
-                    </div>
-                    <div class="col-2">
-                        <p>12</p>
-                    </div>
-                </div>
-                <h4>Coffee specialites</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Cascara</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Irish coffee</p>
-                    </div>
-                    <div class="col-2">
-                        <p>10.9</p>
-                    </div>
-                </div>
-            </div>
+{% extends '_base.twig' %} {% block title %}Generic hipster coffee{% endblock %} {% block content %}
+<main class="container">
+    <h1>Menu</h1>
+    <div class="row">
+        <!--START ROW 1-->
+        <div class="col-sm-12 col-md-6">
+            <h2 class="sr-only">Coffee</h2>
+            <h3>Espresso coffee</h3>
+            <p class="row">
+                <span class="col">Espresso</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Double espresso</span>
+                <span class="col-2">4.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Americano</span>
+                <span class="col-2">5</span>
+            </p>
+            <p class="row">
+                <span class="col">Espresso machiato</span>
+                <span class="col-2">4.3</span>
+            </p>
+            <p class="row">
+                <span class="col">Cappuccino</span>
+                <span class="col-2">5.2</span>
+            </p>
+            <p class="row">
+                <span class="col">Latte</span>
+                <span class="col-2">5.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Extra shot</span>
+                <span class="col-2">1.1</span>
+            </p>
         </div>
-        <!--END ROW 1-->
-        <!--START ROW 2-->
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Iced</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Iced Latte</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Espresso on the rock</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Iced Cascara</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Affogato</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Iced Flat white</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Iced Filter</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.8</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Iced tea</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Iced chocolate</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Hot</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Tea</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Ginger tea</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Hot chocolate</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Filter coffee</h3>
+            <p class="row">
+                <span class="col">House Drip Coffee</span>
+                <span class="col-2">4.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Aeropress</span>
+                <span class="col-2">5.5</span>
+            </p>
+            <p class="row">
+                <span class="col">V60</span>
+                <span class="col-2">6.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Kalita</span>
+                <span class="col-2">12</span>
+            </p>
+            <h3>Coffee specialites</h3>
+            <p class="row">
+                <span class="col">Cascara</span>
+                <span class="col-2">4.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Irish coffee</span>
+                <span class="col-2">10.9</span>
+            </p>
         </div>
-        <!--END ROW 2-->
-        <!--START ROW 3-->
-        <h3>Non-alcoholic beverages</h3>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Lemonades</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Fresh Squeezed Lemonade</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Ginger Lemonade</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Cascara Fizz Original</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.8</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Club-mate Cola</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Tonic Thomas Henry</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Water</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Sparkling</p>
-                    </div>
-                    <div class="col-2">
-                        <p>2.4</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Still</p>
-                    </div>
-                    <div class="col-2">
-                        <p>2.4</p>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <!--END ROW 1-->
+    <!--START ROW 2-->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h3>Iced</h3>
+            <p class="row">
+                <span class="col">Iced Latte</span>
+                <span class="col-2">6.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Espresso on the rock</span>
+                <span class="col-2">4.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Iced Cascara</span>
+                <span class="col-2">5.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Affogato</span>
+                <span class="col-2">5.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Iced Flat white</span>
+                <span class="col-2">5.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Iced Filter</span>
+                <span class="col-2">5.8</span>
+            </p>
+            <p class="row">
+                <span class="col">Iced tea</span>
+                <span class="col-2">4.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Iced chocolate</span>
+                <span class="col-2">6.2</span>
+            </p>
         </div>
-        <!--END ROW 3-->
-        <!--START ROW 4-->
-        <h3>Alcoholic beverages</h3>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Beer</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Small breweries on tap</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Birell (bottled)</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Cider Magnetic Apple</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.5</p>
-                    </div>
-                </div>
-                <h4>White wine</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Chardonnay Les Vignes de L'Arque, France</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Sauvignon Blanc, Château Le Sartre Blanc 2011</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.8</p>
-                    </div>
-                </div>
-                <h4>Red wine</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Cuvée Côtes du Rhône Vigneros de Caracterem</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Cabernet Sauvignon, Château Tour du Roch-Milon 2011</p>
-                    </div>
-                    <div class="col-2">
-                        <p>3.5</p>
-                    </div>
-                </div>
-                <h4>Coctails</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Gin Tonic</p>
-                    </div>
-                    <div class="col-2">
-                        <p>9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Cuba Libre</p>
-                    </div>
-                    <div class="col-2">
-                        <p>9.9</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Mojito</p>
-                    </div>
-                    <div class="col-2">
-                        <p>9.9</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Spirits</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Metaxa 12*</p>
-                    </div>
-                    <div class="col-2">
-                        <p>7.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Tullamore Dew</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Jameson Whiskey</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Bombay, Añejo Suave</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.8</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Ron Cubay, Añejo Suave</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Tequila, El Jimador, Reposado</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6.2</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Vodka Finlandia</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Bailey's</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Jagermeister</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Graham's Tawny Porto</p>
-                    </div>
-                    <div class="col-2">
-                        <p>4.7</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Hot</h3>
+            <p class="row">
+                <span class="col">Tea</span>
+                <span class="col-2">4.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Ginger tea</span>
+                <span class="col-2">4.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Hot chocolate</span>
+                <span class="col-2">4.5</span>
+            </p>
         </div>
-        <!--END ROW 4-->
-        <!--START ROW 5-->
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Something to eat</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Soup of the day</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.8</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Chipotle Citrus Chicken Sandwich</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.4</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Avocado Toast</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5.6</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Super BLT Sandwich</p>
-                    </div>
-                    <div class="col-2">
-                        <p>12.8</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Sweets</h4>
-                <div class="row">
-                    <div class="col-10">
-                        <p>Homemade cakes of the day</p>
-                    </div>
-                    <div class="col-2">
-                        <p>5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Key Lime and Coconut</p>
-                    </div>
-                    <div class="col-2">
-                        <p>1.5</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Icecream</p>
-                    </div>
-                    <div class="col-2">
-                        <p>2</p>
-                    </div>
-                    <div class="col-10">
-                        <p>Tiramisu</p>
-                    </div>
-                    <div class="col-2">
-                        <p>6</p>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <!--END ROW 2-->
+    <!--START ROW 3-->
+    <h3>Non-alcoholic beverages</h3>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h3>Lemonades</h3>
+            <p class="row">
+                <span class="col">Fresh Squeezed Lemonade</span>
+                <span class="col-2">5</span>
+            </p>
+            <p class="row">
+                <span class="col">Ginger Lemonade</span>
+                <span class="col-2">4.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Cascara Fizz Original</span>
+                <span class="col-2">5.8</span>
+            </p>
+            <p class="row">
+                <span class="col">Club-mate Cola</span>
+                <span class="col-2">4.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Tonic Thomas Henry</span>
+                <span class="col-2">4.3</span>
+            </p>
         </div>
-        <!--END ROW 5-->
-        <div class="ghc-img-responsive">
-            <img class="img-fluid " src="/img/espresso-machine-detail.jpg" alt="">
+        <div class="col-sm-12 col-md-6">
+            <h3>Water</h3>
+            <p class="row">
+                <span class="col">Sparkling</span>
+                <span class="col-2">2.4</span>
+            </p>
+            <p class="row">
+                <span class="col">Still</span>
+                <span class="col-2">2.4</span>
+            </p>
         </div>
-    </main>
+    </div>
+    </div>
+    <!--END ROW 3-->
+    <!--START ROW 4-->
+    <h3>Alcoholic beverages</h3>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h3>Beer</h3>
+            <p class="row">
+                <span class="col">Small breweries on tap</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Birell (bottled)</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Cider Magnetic Apple</span>
+                <span class="col-2">4.5</span>
+            </p>
+            <h3>White wine</h3>
+            <p class="row">
+                <span class="col">Chardonnay Les Vignes de L'Arque, France</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Sauvignon Blanc, Château Le Sartre Blanc 2011</span>
+                <span class="col-2">3.8</span>
+            </p>
+            <h3>Red wine</h3>
+            <p class="row">
+                <span class="col">Cuvée Côtes du Rhône Vigneros de Caracterem</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Cabernet Sauvignon, Château Tour du Roch-Milon 2011</span>
+                <span class="col-2">3.5</span>
+            </p>
+            <h3>Coctails</h3>
+            <p class="row">
+                <span class="col">Gin Tonic</span>
+                <span class="col-2">9</span>
+            </p>
+            <p class="row">
+                <span class="col">Cuba Libre</span>
+                <span class="col-2">9.9</span>
+            </p>
+            <p class="row">
+                <span class="col">Mojito</span>
+                <span class="col-2">9.9</span>
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Spirits</h3>
+            <p class="row">
+                <span class="col">Metaxa 12*</span>
+                <span class="col-2">7.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Tullamore Dew</span>
+                <span class="col-2">6.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Jameson Whiskey</span>
+                <span class="col-2">6.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Bombay, Añejo Suave</span>
+                <span class="col-2">6.8</span>
+            </p>
+            <p class="row">
+                <span class="col">Ron Cubay, Añejo Suave</span>
+                <span class="col-2">6.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Tequila, El Jimador, Reposado</span>
+                <span class="col-2">6.2</span>
+            </p>
+            <p class="row">
+                <span class="col">Vodka Finlandia</span>
+                <span class="col-2">5.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Bailey's</span>
+                <span class="col-2">5.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Jagermeister</span>
+                <span class="col-2">5.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Graham's Tawny Porto</span>
+                <span class="col-2">4.7</span>
+            </p>
+        </div>
+    </div>
+    <!--END ROW 4-->
+    <!--START ROW 5-->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h3>Something to eat</h3>
+            <p class="row">
+                <span class="col">Soup of the day</span>
+                <span class="col-2">5.8</span>
+            </p>
+            <p class="row">
+                <span class="col">Chipotle Citrus Chicken Sandwich</span>
+                <span class="col-2">5.4</span>
+            </p>
+            <p class="row">
+                <span class="col">Avocado Toast</span>
+                <span class="col-2">5.6</span>
+            </p>
+            <p class="row">
+                <span class="col">Super BLT Sandwich</span>
+                <span class="col-2">12.8</span>
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Sweets</h3>
+            <p class="row">
+                <span class="col">Homemade cakes of the day</span>
+                <span class="col-2">5</span>
+            </p>
+            <p class="row">
+                <span class="col">Key Lime and Coconut</span>
+                <span class="col-2">1.5</span>
+            </p>
+            <p class="row">
+                <span class="col">Icecream</span>
+                <span class="col-2">2</span>
+            </p>
+            <p class="row">
+                <span class="col">Tiramisu</span>
+                <span class="col-2">6</span>
+            </p>
+        </div>
+    </div>
+    <!--END ROW 5-->
+    <div class="ghc-img-responsive">
+        <img class="img-fluid " src="/img/espresso-machine-detail.jpg" alt="">
+    </div>
+</main>
 {% endblock %}
