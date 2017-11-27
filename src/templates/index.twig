@@ -4,6 +4,8 @@
 {% block title %}Generic hipster coffee{% endblock %}
 
 
+{% block nav %}{% include '__nav.twig' with {'currentPage': 'home'} %}{% endblock %}
+
 {% block heading %}Generic hipster coffee{% endblock %}
 
 {% block content %}
@@ -31,7 +33,6 @@
             </div>
         </div>
     </div>
-
 {% endblock %}
 
  {% block footerMedia %}

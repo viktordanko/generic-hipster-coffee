@@ -6,6 +6,12 @@
 
 {% block heading %}Coffee{% endblock %}
 
+
+{% block nav %}
+    {% include '__nav.twig' with {'currentPage': 'coffee'} %}
+{% endblock %}
+
+
 {% block content %}
     <p>We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never
         boring. We bring you the best from leading european specialty roasteries, currently mostly from <a href="https://shop.squaremilecoffee.com/" target="_blank">Square Mile Coffee

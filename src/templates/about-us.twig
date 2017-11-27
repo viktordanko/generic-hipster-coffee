@@ -4,6 +4,11 @@
 {% block title %}About us | {{ parent() }}{% endblock %}
 
 
+{% block nav %}
+    {% include '__nav.twig' with {'currentPage': 'ourStory'} %}
+{% endblock %}
+
+
 {% block content %}
     <h1>Our story</h1>
     <p>GHC started as a project of two friends and passionate baristas, John & Don in 2010. Believing as much in the hand of an

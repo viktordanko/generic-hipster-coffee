@@ -6,6 +6,12 @@
 
 {% block heading %}Menu{% endblock %}
 
+
+{% block nav %}
+    {% include '__nav.twig' with {'currentPage': 'menu'} %}
+{% endblock %}
+
+
 {% block content %}
     <div class="row">
         <!--START ROW 1-->
