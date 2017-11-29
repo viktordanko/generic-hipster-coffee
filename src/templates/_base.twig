@@ -27,7 +27,9 @@
                     <img src="/svg/logo.svg" style="width: 100%; height: auto" class="align-top" alt="">
                 </a>
                 <ul class="navbar-nav flex-row">
-                    {% block nav %}{% endblock %}
+                    {% block nav %}
+                        {% include '__nav.twig' with {'currentPage': 'menu'} %}
+                    {% endblock %}
                 </ul>
             </div>
         </nav>
@@ -43,10 +45,12 @@
             {% endblock %}
         </div>
     </main>
-    <footer class="bg-dark py-5">
+    <footer class="ghc-footer bg-dark py-5">
         <div class="container">
             <ul class="navbar-nav flex-row justify-content-center">
-                {% block nav %}{% endblock %}
+                {% block nav %}
+                    {% include '__nav.twig' with {'currentPage': 'menu'} %}
+                {% endblock %}
             </ul>
                 <div class="row text-center text-white">
                     <h2 class="col-12 font-weight-bold h5">#hipstersmakescoffee</h2>
