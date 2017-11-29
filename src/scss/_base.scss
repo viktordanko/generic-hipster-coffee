@@ -17,3 +17,21 @@ h5 {
     margin-bottom: 1.5rem;
     letter-spacing: 0.1rem;
 }
+
+a {
+    &:hover {
+        color: lighten(#09f, 20%);
+        text-decoration: underline;
+
+    }
+}
+
+
+.ghc-footer {
+    .nav-item {
+        .active {
+            color: $gray-500;
+
+        }
+    }
+}
