@@ -21,8 +21,7 @@ h5 {
 a {
     &:hover {
         color: lighten(#09f, 20%);
-        text-decoration: underline;
-
+        text-decoration: none;
     }
 }
 
@@ -31,7 +30,6 @@ a {
     .nav-item {
         .active {
             color: $gray-500;
-
         }
     }
 }
