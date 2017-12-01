@@ -12,6 +12,8 @@
 {% endblock %}
 
 
+
+
 {% block content %}
     <p>We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never
         boring. We bring you the best from leading european specialty roasteries, currently mostly from <a href="https://shop.squaremilecoffee.com/" target="_blank">Square Mile Coffee
@@ -19,59 +21,30 @@
     <p class="small">You can currently buy these beans in 350 g bags</p>
     <div class="card-deck">
         <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-0">
-                    <h3 class="card-header">Macho (Costa&nbsp;Rica)</h3>
-                        <img class="card-img-top img-fluid" src="img/smcr-macho.jpg" alt="Macho (Costa Rica)">
-                    <div class="card-body bg-light">
-                        <p class="card-text">
-                            <small class="text-muted">honeycomb / hazelnut / creamy</small>
-                        </p>
-                        <p class="card-text">Our second Macho lot for the season, and this time we have the red honey processed lot providing a heavier, creamy body with sweet honeycomb flavours and a sprinkling of hazelnuts.</p>
+            {% for coffee in coffees %}
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0">
+                    <h3 class="card-header">{{ coffee.name }} ({{ coffee.origin }})</h3>
+                            <img class="card-img-top img-fluid" src="{{ coffee.src }}"
+                                srcset="{{ coffee.srcset }}"
+                                sizes="
+                                        (min-width: 1200px) 495px,
+                                        (min-width: 992px) 405px,
+                                        (min-width: 768px) 285px,
+                                        (min-width: 576px) 490px,
+                                        calc(100vw - 2*25px)"
+                                alt="{{ coffee.name }} ({{ coffee.origin }})">
+                        <div class="card-body bg-light">
+                            <p class="card-text">
+                                <small class="text-muted">{{ coffee.taste }}</small>
+                            </p>
+                            <p class="card-text">{{ coffee.desc }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-0">
-                    <h3 class="card-header">Coffea Suarez (Costa&nbsp;Rica)</h3>
-                        <img class="card-img-top img-fluid" src="/img/smcr-coffea-suarez.jpg" alt="Coffea Suarez (Costa Rica espresso)">
-                    <div class="card-body bg-light">
-                        <p class="card-text">
-                            <small class="text-muted">stewed peach / berry / cocoa</small>
-                        </p>
-                        <p class="card-text">A fruit driven espresso from the West Valley region of Costa Rica. Plenty of stewed peach and berry flavours, hints of sweet lemon akin to limoncello and a cocoa bassline, this is an espresso to keep everyone happy.</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-0">
-                    <h3 class="card-header">Kamwangi (Kenya)</h3>
-                    <img class="card-img-top img-fluid" src="/img/smcr-kamwangi.jpg" alt="Kamwangi (Kenya)">
-                    <div class="card-body bg-light">
-                        <p class="card-text">
-                            <small class="text-muted">blackberry / orange / silky</small>
-                        </p>
-                        <p class="card-text">This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to
-                            berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky
-                            smooth body.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-0">
-                    <h3 class="card-header">La Colmenita (Guatemala)</h3>
-                    <img class="card-img-top img-fluid" src="/img/smcr-la-colmenita.jpg" alt="La Colmenita (Guatemala espresso)">
-                    <div class="card-body bg-light">
-                        <p class="card-text">
-                            <small class="text-muted">nectarine / white chocolate / nougat</small>
-                        </p>
-                        <p class="card-text">A completely balanced and approachable espresso from the Huehuetenango region of Guatemala. Nougat dominates the cup with hints of nectarine and orange sitting alongside a white chocolate sweetness.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 {% endblock %}
 
 {% block nav %}

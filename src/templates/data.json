@@ -1,33 +1,36 @@
 {
-  "bootstrapVersion": "4",
-  "sampleColors": [
+  "coffees": [
     {
-      "name": "red",
-      "value": "#f00"
+      "name": "Coffea Suarez",
+      "origin": "Costa Rica",
+      "taste": "stewed peach / berry / cocoa",
+      "desc": "A fruit driven espresso from the West Valley region of Costa Rica. Plenty of stewed peach and berry flavours, hints of sweet lemon akin to limoncello and a cocoa bassline, this is an espresso to keep everyone happy.",
+      "src": "smcr-coffea-suarez_960_ywdadl_c_scale,w_500.jpg",
+      "srcset": "img/smcr-coffea-suarez_960_ywdadl_c_scale,w_270.jpg 270w,img/smcr-coffea-suarez_960_ywdadl_c_scale,w_500.jpg 500w,img/smcr-coffea-suarez_960_ywdadl_c_scale,w_674.jpg 674w,img/smcr-coffea-suarez_960_ywdadl_c_scale,w_960.jpg 960w"
     },
     {
-      "name": "green",
-      "value": "#0f0"
+      "name": "Macho",
+      "origin": "Costa Rica",
+      "taste": "honeycomb / hazelnut / creamy",
+      "desc": "Our second Macho lot for the season, and this time we have the red honey processed lot providing a heavier, creamy body with sweet honeycomb flavours and a sprinkling of hazelnuts.",
+      "src": "img/smcr-macho_960_to7ms2_c_scale,w_507.jpg",
+      "srcset": "img/smcr-macho_960_to7ms2_c_scale,w_270.jpg 270w,img/smcr-macho_960_to7ms2_c_scale,w_507.jpg 500w,img/smcr-macho_960_to7ms2_c_scale,w_686.jpg 686w,img/smcr-macho_960_to7ms2_c_scale,w_960.jpg 960w"
     },
     {
-      "name": "blue",
-      "value": "#00f"
+      "name": "Kamwangi",
+      "origin": "Kenya",
+      "taste": "blackberry / orange / silky",
+      "desc": "This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body.",
+      "src": "img/smcr-kamwangi_960_wr1p3j_c_scale,w_414.jpg",
+      "srcset": "img/smcr-kamwangi_960_wr1p3j_c_scale,w_414.jpg 500w,img/smcr-kamwangi_960_wr1p3j_c_scale,w_568.jpg 686w,img/smcr-kamwangi_960_wr1p3j_c_scale,w_960.jpg 960w"
     },
-    {
-      "name": "cyan",
-      "value": "#0ff"
-    },
-    {
-      "name": "magenta",
-      "value": "#f0f"
-    },
-    {
-      "name": "yellow",
-      "value": "#ff0"
-    },
-    {
-      "name": "black",
-      "value": "#000"
-    }
+     {
+       "name": "La Colmenita",
+       "origin": "Guatemala",
+       "taste": "nectarine / white chocolate / nougat",
+       "desc": "A completely balanced and approachable espresso from the Huehuetenango region of Guatemala. Nougat dominates the cup with hints of nectarine and orange sitting alongside a white chocolate sweetness.",
+       "src": "img/smcr-la-colmenita_960_q4kivq_c_scale,w_411.jpg",
+       "srcset": "img/smcr-la-colmenita_960_q4kivq_c_scale,w_411.jpg 507w,img/smcr-la-colmenita_960_q4kivq_c_scale,w_571.jpg 686w,img/smcr-la-colmenita_960_q4kivq_c_scale,w_960.jpg 960w"
+     }
   ]
 }
