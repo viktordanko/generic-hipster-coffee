@@ -13,21 +13,19 @@ h5 {
     letter-spacing: 0.1rem;
 }
 
-a {
-    &:hover {
-        color: lighten(#09f, 20%);
+a:hover {
+   color: lighten(#09f, 20%);
+}
+
+nav {
+    .nav-link {
         text-decoration: none;
     }
 }
 
 .ghc-footer {
-    .nav-item {
-        .active {
-            color: $gray-500;
-        }
+    .nav-item .active{
+        color: $gray-500;
+        text-decoration: none;
     }
-}
-
-span.col-2 {
-    text-align: right;
 }
