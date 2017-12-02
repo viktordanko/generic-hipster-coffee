@@ -18,30 +18,26 @@
         Roasters</a>, a multi award winning coffee roasting company based in East London.</p>
     <p>You can currently buy these beans in 350 g bags</p>
     <div class="card-deck">
-        <div class="row">
             {% for coffee in coffees %}
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0">
+                <div class="ghc-card-coffee card flex-wrap border-0 mb-3">
                     <h3 class="card-header">{{ coffee.name }} ({{ coffee.origin }})</h3>
-                            <img class="card-img-top img-fluid" src="{{ coffee.src }}"
-                                srcset="{{ coffee.srcset }}"
-                                sizes="
-                                        (min-width: 1200px) 495px,
-                                        (min-width: 992px) 405px,
-                                        (min-width: 768px) 285px,
-                                        (min-width: 576px) 490px,
-                                        calc(100vw - 2*25px)"
-                                alt="{{ coffee.name }} ({{ coffee.origin }})">
-                        <div class="card-body bg-light">
-                            <p class="card-text">
-                                <small class="text-muted">{{ coffee.taste }}</small>
-                            </p>
-                            <p class="card-text">{{ coffee.desc }}</p>
-                        </div>
+                    <img class="card-img-top img-fluid" src="{{ coffee.src }}"
+                        srcset="{{ coffee.srcset }}"
+                        sizes="
+                                (min-width: 1200px) 495px,
+                                (min-width: 992px) 405px,
+                                (min-width: 768px) 285px,
+                                (min-width: 576px) 490px,
+                                calc(100vw - 2*25px)"
+                        alt="{{ coffee.name }} ({{ coffee.origin }})">
+                    <div class="card-body bg-light">
+                        <p class="card-text">
+                            <small class="text-muted">{{ coffee.taste }}</small>
+                        </p>
+                        <p class="card-text">{{ coffee.desc }}</p>
                     </div>
                 </div>
             {% endfor %}
-        </div>
     </div>
 {% endblock %}
 
