@@ -95,7 +95,7 @@
     // variables. Mostly focused on spacing.
     // You can add more entries to the $spacers map, should you need more variation.
     //
-    // $spacer: 1rem !global;
+    $spacer: 1.5rem !global;
     // $spacers: (
     //   0: 0,
     //   1: ($spacer * .25),
@@ -373,7 +373,7 @@
     // $input-group-btn-border-color:   $input-border-color !global;
     //
     // $custom-control-gutter:   1.5rem !global;
-    // $custom-control-spacer-y: .25rem !global;
+    // $custom-control-spacer-y: 1.25rem !global;
     // $custom-control-spacer-x: 1rem !global;
     //
     // $custom-control-indicator-size:       1rem !global;
