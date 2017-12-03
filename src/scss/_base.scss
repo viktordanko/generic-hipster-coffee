@@ -27,7 +27,9 @@ nav {
 }
 
 .ghc-card-coffee {
-    min-width: 25em;
+    @media (min-width: 576px) {
+        min-width: 25rem;
+    }
 }
 
 
