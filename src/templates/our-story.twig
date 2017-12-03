@@ -19,7 +19,21 @@
 
 
 {% block footerMedia %}
-        <img class="img-fluid ghc-n-mb-2" src="/img/espresso-machine.jpg" alt="Espresso machine">
+        <img class="img-fluid ghc-n-mb-2" src="/img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_1083.jpg"
+            srcset="
+                /img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_270.jpg 270w,
+                /img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_741.jpg 741w,
+                /img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_1083.jpg 1083w,
+                /img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_1365.jpg 1365w,
+                /img/espresso-machine_bcykqm_ar_16_9,c_fill,g_auto__c_scale,w_2180.jpg 2180w"
+            sizes="
+                (min-width: 1200px) 1090px,
+                (min-width: 992px) 910px,
+                (min-width: 768px) 670px,
+                (min-width: 576px) 490px,
+                calc(100vw - 2*25px)"
+
+            alt="Espresso machine">
 {% endblock %}
 
 {% block nav %}
