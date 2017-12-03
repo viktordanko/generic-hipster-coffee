@@ -1,4 +1,4 @@
-# A basic template to develop a website based on Bootstrap 4
+# A basic template for fictitious coffeehouse website based on Bootstrap 4
 
 ## First time installation
 
@@ -87,4 +87,6 @@ You can use [surge.sh](https://surge.sh) free service for that.
 1. From now on run `gulp deploy` whenever you want to publish a new version.
 
 If you want multiple people to be able to deploy to the same domain, run `surge --add mail.your.collaborator.used.to.register.with.surge@example.com` for each.
+
+An actual insight is running on [Generic Hipster Coffee](https://ghc.surge.sh)
  
