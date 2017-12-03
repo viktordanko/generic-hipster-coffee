@@ -11,13 +11,37 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:image" content="https://ghc.surge.sh/img/counter.jpg">
+    <meta property="og:image" content="https://ghc.surge.sh/img/counter_gn2iqw_ar_16_9,c_fill,g_auto__c_scale,w_270.jpg">
     <meta property="og:title" content="Generic Hipster Coffee">
     <meta property="og:description" content="Generic Hipster Coffee is a large modern cafe located on bustling Ivy Street in San Francisco. Over two floors, we offer tasty coffee, home-made food, coffee tastings, barista courses, talks and special events. It’s a fresh clean dynamic area suitable for meetings, working with wifi, families and intimate dining too.">
     <meta property="og:url" content="https://ghc.surge.sh/">
     <meta property="fb:app_id" content="123456789">
     <meta name="twitter:card" content="summary">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" async></script>
+    <script type="application/ld+json">
+    {
+        "@context": "http://www.schema.org/",
+        "@type": "Restaurant",
+        "name": "Generic Hipster Coffee",
+        "image": "https://ghc.surge.sh/img/counter_gn2iqw_ar_16_9,c_fill,g_auto__c_scale,w_270.jpg",
+        "author": {
+        "@type": "Person",
+        "name": "VD",
+        "email": "mailto:jondoe@example.com",
+        "url": "http://ghc.surge.sh"
+        },
+        "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "streetAddress": "321 Ivy St."
+        },
+        "description": "Generic Hipster Coffee is a large modern cafe located on bustling Ivy Street in San Francisco. Over two floors, we offer tasty coffee, home-made food, coffee tastings, barista courses, talks and special events. It’s a fresh clean dynamic area suitable for meetings, working with wifi, families and intimate dining too",
+        "openingHours": ["Su-Thu 8:00-23:00", "Fri-Sat 8:00-1:00"],
+        "telephone": "+1 415-321-4567"
+        },
+    }
+    </script>
     <title>{% block title %}Generic hipster coffee{% endblock %}</title>
 </head>
 <body>
@@ -25,7 +49,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container flex-column flex-sm-row">
                 <a class="navbar-brand m-0" href="/">
-                    <img src="/svg/logo.svg" style="width: 100%; height: auto" class="align-top" alt="">
+                    <img itemprop="logo" src="/svg/logo.svg" style="width: 100%; height: auto" class="align-top" alt="">
                 </a>
                 <ul class="navbar-nav flex-row">
                     {% block nav %}
