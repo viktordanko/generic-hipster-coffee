@@ -1,4 +1,4 @@
-# A basic website for a fictitious coffeehouse based on Bootstrap running on [Generic Hipster Coffee](https://ghc.surge.sh)
+# A basic website for a fictitious coffeehouse based on Bootstrap running on [Generic Hipster Coffee](ghc.viktor.coreskill.tech)
 
 ## First time installation
 
@@ -81,6 +81,4 @@ You can use [surge.sh](https://surge.sh) free service for that.
 2. Run `surge` manually once in `/dist`: you will create an account with surge.sh.
 3. Set your own domain in `gulpfile.js` (replace `https://my-first-website.surge.sh`).
 4. From now on run `gulp deploy` whenever you want to publish a new version.
-
-If you want multiple people to be able to deploy to the same domain, run `surge --add mail.your.collaborator.used.to.register.with.surge@example.com` for each.
 
