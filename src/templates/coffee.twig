@@ -35,6 +35,12 @@
                             <small class="text-muted">{{ coffee.taste }}</small>
                         </p>
                         <p class="card-text">{{ coffee.desc }}</p>
+                        <p class="text-muted">Roasting date {{ post.published_at|date("F jS") }}</p>
+                        <p class="price" itemprop="offer" itemscope="" itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="{{ coffee.price }}">
+                            <meta itemprop="priceCurrency" content="usd">
+                            <span class="actual">$ {{ coffee.price|number_format(2, '.') }}&nbsp;</span>
+                        </p>
                     </div>
                 </div>
             {% endfor %}
