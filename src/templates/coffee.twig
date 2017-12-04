@@ -39,7 +39,7 @@
                         <p class="price" itemprop="offer" itemscope="" itemtype="https://schema.org/Offer">
                             <meta itemprop="price" content="{{ coffee.price }}">
                             <meta itemprop="priceCurrency" content="usd">
-                            <span class="actual">$ {{ coffee.price }}&nbsp;</span>
+                            <span class="actual">$ {{ coffee.price|number_format(2, '.') }}&nbsp;</span>
                         </p>
                     </div>
                 </div>
