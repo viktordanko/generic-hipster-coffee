@@ -118,5 +118,12 @@ gulp.task('deploy', ['build'], function(){
     })
 });
 
+gulp.task('deploy:coreskill', ['build'], function(){
+    return surge({
+        project: 'dist',
+        domain: 'ghc.viktor.coreskill.tech'
+    })
+});
+
 // set develop as a default task (gulp runs this when you don't specify a task)
 gulp.task('default', ['develop']);
