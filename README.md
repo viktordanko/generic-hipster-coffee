@@ -63,7 +63,7 @@ Folders and files from `/src/static/` are just copied directly to `/dist/` folde
 This website is made with [Bootstrap 4 beta](https://getbootstrap.com/).
  
 Not necessary components are commented out to reduce final 'index.css' file size. 
-If you need some other components, go to  `/src/index.scss` or `/src/_custom-bootstrap-variables.scss` and comment them in.
+If you need some other components, go to  `/src/index.scss` or `/src/_custom-bootstrap-variables.scss` and uncomment it.
 
 See `gulpfile.js` for supported browsers.
 
