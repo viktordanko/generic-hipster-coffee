@@ -1,0 +1,102 @@
+{% extends '_base.twig' %}
+
+
+{% block title %}Brewing Ratio | {{ parent() }}{% endblock %}
+
+
+{% block heading %}Coffee brewing ratio{% endblock %}
+
+
+{% block nav %}
+    {% include '__nav.twig' with {'currentPage': 'coffee'} %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="coffee">Coffee</label>
+                    <div class="input-group">
+                        <input type="number" value="8" min="8" max="80" id="coffee" class="form-control">
+                        <div class="input-group-addon">g</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="ratio">Water</label>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <input type="number" id="water" class="form-control" readonly>
+                            <div class="input-group-addon">ml</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="ratio">Ratio</label>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <input type="number" id="ratio" value="16" step="0.5" class="form-control">
+                            <div class="input-group-addon">:1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="ratio">Yield</label>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <input type="number" id="yield" class="form-control" readonly>
+                            <div class="input-group-addon">ml</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script>
+    document.addEventListener('DOMContentLoaded',function() {
+
+        let coffeeInput = document.getElementById('coffee');
+        let ratioInput = document.getElementById('ratio');
+
+        function calcWater(coffee, ratio) {
+            let water = coffee * ratio;
+            let yield = water * 0.9;
+
+            return {'water': water, 'yield': yield};
+        }
+
+        function calc() {
+            if (coffeeInput.value >= parseInt(coffeeInput.min, 10) && coffeeInput.value <= parseInt(coffeeInput.max, 10)) {
+
+                coffeeInput.classList.remove('is-invalid');
+                let result = calcWater(coffeeInput.value, ratioInput.value);
+                document.getElementById('water').value = result.water;
+                document.getElementById('yield').value = result.yield;
+
+            } else {
+                coffeeInput.classList.add('is-invalid');
+                console.log('Bitch, you don\'t have any coffee!');
+            }
+        }
+
+        calc();
+
+        coffeeInput.addEventListener('change', function() {
+            calc();
+        });
+        ratioInput.addEventListener('change', function() {
+            calc();
+        });
+    })
+    </script>
+{% endblock %}
